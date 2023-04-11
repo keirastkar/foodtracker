@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container p-5 mt-5" style="border-radius: 5px; background-color:E4E7F0 ; width: 30%; ">
+        <div class="d-flex justify-content-center ">
+            <div class="flex-box-row">
+        <h1 style="color: #F2A93B;">Delete Food</h1>
+        <form style="color:#252833;" action="" method="post">
+            {% csrf_token %}
+            <p>Are you sure you want to delete ?</p>
+            <button class="edit">Confirm</button>
+            <a href="{% url 'profile' %}" class="cancle">Cancle</a>
+        </form>
+    </div></div></div>
+{% endblock content %}

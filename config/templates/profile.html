@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{%load static %}
+
+{% block content %}
+<div class="d-flex col pt-5 ">
+    <div class="d-flex col-3">
+        <div class="card pl-3" style=" border: none ;background-color: #252833;">
+            <div class="card-body">
+                <div class="calorielimit">Calorie Limit: {{Calorielimit}} </div>
+                <a class="edit" href="{% url 'calorielimit_edit' user.pk %}">Edit</a>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex  col-4">
+        <div class="card" style=" background-color: #252833; border: none;">
+            <div class="card-body">
+                <p class="total">Total Calories consumed: {{Calorieconsumed}}</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="d-flex col-3">
+        <div class="card" style=" background-color: #252833; border: none;">
+            <div class="card-body">
+                <p class="left">Total Calories Left: {{ calorieleft }}</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="flex-box-row">
+    <h1 class="headline text-center pb-3">Eaten Food Items </h1>
+    <table class="table table-bordered text-center">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Food Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Delete Food</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for food in selectedfood %}
+            <tr>
+                <td>{{ food.name }}</td>
+                <td>{{ food.category }}</td>
+                <td>{{ food.quantity }}</td>
+                <td>
+                    <a href="{% url 'deleteselectedfood' food.id %}" class="a">Delete</a>
+                </td>
+
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock content %}

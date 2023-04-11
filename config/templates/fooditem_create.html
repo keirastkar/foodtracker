@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+    <h1 class="headline text-center pt-4 " style="color: #2BB9B0;">Create Food</h1>
+
+<div class="d-flex justify-content-center">
+
+
+<form action="" method="post" class="m-4 p-3 text-center" style="border: solid 1px #2BB9B0; width: 350px;">
+    {% csrf_token %}
+    <h5 class="form-label" style="color: #2BB9B0 !important;">
+    {{ form.as_p }}
+    </h5>
+    <button class="btn ml-2 mb-2 edit " type="submit">Save</button></br>
+    <button class="btn ml-2 edit " type="submit"><a style="color: aliceblue; text-decoration: none;" href="{%url 'fooditem_list' %}">See available food items</a></button>
+
+</form></div>
+
+{% endblock content %}

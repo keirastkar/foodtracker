@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <h5 class="form-labels ms-4" style="color:#2BB9B0 !important;">
+        {{ form.as_p }}
+        </h5>
+        <button class="edit ms-4" type="submit" >Save</button>
+    </form>
+{% endblock content %}

@@ -1,0 +1,160 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+
+    background-color: #252833 !important;
+    height: 100%;
+
+}
+
+.flexd {
+    display: flex;
+    justify-content: center;
+}
+
+.flexs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titel {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #F2A93B;
+    text-decoration: none;
+}
+
+.titel:hover {
+    color: #D68E22;
+}
+
+.p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F2A93B;
+    text-decoration: none;
+    display: inline-block;
+    right: 0;
+
+}
+
+.a {
+    font-size: 18px;
+    background-color: #F2A93B;
+    border-radius: 10px;
+    color: #E4E7F0;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.a:hover {
+    background-color: #f2a93bb3;
+    color: #E4E7F0;
+}
+
+.navbar {
+    background-color: #E4E7F0;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
+    color: #252833 !important;
+}
+
+.nav-link {
+    color: #252833;
+}
+
+.homepage:hover {
+    background-color: #6FB8FD;
+    color: #E4E7F0;
+}
+
+.profile:hover {
+    background-color: #B36CCD;
+    color: #E4E7F0;
+}
+
+.createfood:hover {
+    background-color: #2BB9B0;
+    color: #E4E7F0;
+}
+
+.selectfood:hover {
+    background-color: #F2A93B;
+    color: #E4E7F0;
+}
+
+th {
+    color: #B36CCD;
+
+
+}
+
+.calorielimit {
+    color: #2BB9B0 !important;
+    font-size: 24px;
+}
+
+.edit {
+    background-color: #2BB9B0;
+    font-size: medium;
+    color: #E4E7F0;
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+
+}
+
+.edit:hover {
+    background-color: #2bb9af7e;
+    color: #E4E7F0;
+}
+
+.total {
+
+    color: #B36CCD !important;
+    font-size: 24px;
+
+}
+
+.left {
+    color: #6FB8FD !important;
+    font-size: 24px;
+
+}
+
+.headline {
+
+    color: #F2A93B;
+    font-size: 32px;
+}
+
+.table {
+    width: 50%;
+    margin: auto;
+}
+
+td {
+    color: #E4E7F0;
+}
+
+.select {
+    background-color: #F2A93B;
+    font-size: 18px;
+    color: #E4E7F0;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.select:hover {
+    background-color: #f2a93bb3;
+    color: #E4E7F0;
+}

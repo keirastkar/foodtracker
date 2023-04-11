@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container" style="color: #B36CCD">
+        <div class="d-flex justify-content-center">
+            <h3 class=" pt-3">Your username is: {{user.username}}</h3></div><br>
+            <h3 style="text-align: center;">Your current calorie limit is: {{user.calorielimit}}</h3><br>
+                <div class="flex-box-row p-4 userinfo" >
+                    <input  class="col-12 mt-2 mb-2 p-2 inputuserinfo" id="weight" placeholder="Weight in kg" type="number"><br>
+                    <input  class="col-12 mt-2 mb-2 p-2 inputuserinfo" id="height" placeholder="height in centimeter" type="number"><br>
+                    <button style="background-color: #F2A93B;" class="col-12 mt-2 mb-2 p-2 inputuserinfo" onclick="bmigenerator()" >BMI Calculator</button>
+                    <p id="generator" style="text-align: center;"></p>
+                </div>
+            
+        </div>
+    </div>
+    <script>
+            function bmigenerator(){
+                var int1= document.getElementById("weight").value;
+                var int2= document.getElementById("height").value;
+                var int3= int2/100;
+                var bmi= int1/(Math.pow(int3,2));
+                document.getElementById("generator").innerHTML=bmi;
+            }
+    </script>
+{% endblock content %}
